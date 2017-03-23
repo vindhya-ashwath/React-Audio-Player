@@ -1,10 +1,14 @@
 import React from 'react';
 
 import { Heading } from 'components';
+// import Player from 'components';
 
 const HomePage = () => {
   return (
-    <Heading as={'h1'}>Home Page</Heading>
+    <div>
+      <Heading>HomePage</Heading>
+      <a href="/test">Player</a>
+    </div>
   );
 };
 

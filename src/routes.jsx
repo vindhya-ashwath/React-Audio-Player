@@ -1,16 +1,14 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-
-import App from 'components/App';
-import { HomePage, SamplePage, NotFoundPage } from 'components';
+import { Router, Route, browserHistory } from 'react-router';
+import { HomePage, SamplePage, NotFoundPage, PlayerPage } from 'components';
 
 const routes = (
-  <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
+  <Router history={browserHistory}>
+    <Route path="/" component={HomePage} />
     <Route path="/sample" component={SamplePage} />
-
+    <Route path="/test" component={PlayerPage} />
     <Route path="*" component={NotFoundPage} />
-  </Route>
+  </Router>
 );
 
 export default routes;

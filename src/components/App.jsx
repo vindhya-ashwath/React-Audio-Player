@@ -2,9 +2,9 @@ import React, { PropTypes } from 'react';
 
 const App = ({ children }) => {
   return (
-    <div>
+    <section>
       {children}
-    </div>
+    </section>
   );
 };
 
